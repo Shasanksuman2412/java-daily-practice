@@ -6,42 +6,55 @@ Learning Java one day at a time — inspired by the "learn in public, commit eve
 - Learn Java from basics to advanced.
 - Write and commit code **every single day**, even if it's small.
 - Keep notes alongside code so future-me (and others) can revisit concepts easily.
+- Actually **practice** each concept, not just read about it — so anyone
+  learning from this repo builds real understanding, not just familiarity.
 
 ## 🗂️ Structure
 
-Each day gets its own folder, and inside it, topic-based subfolders/files:
+Each day gets its own folder, and inside it, topic-based subfolders. Every
+topic folder follows the same 4-file pattern:
 
 ```
 Day01-Introduction/
-  ├── Basics/
-  │   ├── HelloWorld.java
-  │   └── notes.md
+  └── Basics/
+      ├── HelloWorld.java     <- the concept, demonstrated in code
+      └── notes.md            <- what was learned, explained in plain words
+
 Day02-Variables/
-  ├── Variables/
-  │   ├── VariablesDemo.java
-  │   └── notes.md
-...
+  └── Variables/
+      ├── VariablesDemo.java  <- the concept, demonstrated in code
+      ├── notes.md            <- what was learned, explained in plain words
+      ├── Practice.md         <- exercises to solve WITHOUT looking at answers
+      └── Solutions.java      <- solutions, only check after attempting
 ```
 
 - `DayXX-<TopicName>` → top-level folder for that day's session.
-- Inside each day folder → one or more topic folders with `.java` files and a `notes.md`.
-- `notes.md` = short notes on what was learned, gotchas, and things to revisit.
+- `notes.md` → concept explained in plain language, with small code snippets.
+- `<Topic>Demo.java` → a runnable file demonstrating the concept.
+- `Practice.md` → exercises (easy → harder) to actually apply the concept.
+- `Solutions.java` → answer key — solve first, check second.
+- A "Self-check" checklist at the bottom of `Practice.md` — if you can't
+  answer those questions confidently, revisit `notes.md` before moving on.
 
 ## ✅ Progress Log
 
 | Day | Date | Topic | Notes |
 |-----|------|-------|-------|
 | 01  |      | Introduction & Hello World | |
+| 02  |      | Variables & Data Types | |
 
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
 
 1. `git pull` (if working from multiple machines).
-2. Create/open today's folder: `DayXX-TopicName/TopicName/`.
-3. Write code + a `notes.md` with 3-5 bullet points on what you learned.
-4. Update the Progress Log table above.
-5. Commit:
+2. Create today's folder: `./new_day.sh <day-num> <TopicName> <MainClassName>`
+3. Learn the concept, write it up in `notes.md`.
+4. Write the demo `.java` file.
+5. Write 3-5 practice exercises in `Practice.md` and attempt them yourself.
+6. Write `Solutions.java` — only after you've actually tried the exercises.
+7. Update the Progress Log table above.
+8. Commit:
    ```bash
    git add .
    git commit -m "Day 03: Loops - for, while, do-while"
@@ -49,7 +62,7 @@ Day02-Variables/
    ```
 
 ## 🛠️ Requirements
-- JDK installed (`java -version` to check)
+- JDK installed (`java -version` and `javac -version` to check)
 - Any editor (VS Code / IntelliJ)
 
 ## 📚 Resources
@@ -57,4 +70,6 @@ Day02-Variables/
 - Practice: LeetCode / HackerRank Java track
 
 ---
-⭐ The real goal isn't a perfect repo — it's the **daily habit**. Small consistent commits > big rare ones.
+⭐ The real goal isn't a perfect repo — it's the **daily habit**, and making
+sure each day's concept is actually understood, not just copy-pasted. Small
+consistent commits > big rare ones.
