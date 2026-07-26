@@ -42,7 +42,7 @@ Day02-Variables/
 |-----|------|-------|-------|
 | 01  |      | Introduction & Hello World | |
 | 02  |      | Variables & Data Types | |
-
+| 03  |      | Operators              | |   
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
