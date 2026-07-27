@@ -45,6 +45,7 @@ Day02-Variables/
 | 03  |      | Operators              | |
 | 04  |      | Conditionals           | | 
 | 05  |      | Loops                  | |
+| 06  |      | Arrays                 | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
