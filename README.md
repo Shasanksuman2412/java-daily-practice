@@ -47,6 +47,7 @@ Day02-Variables/
 | 05  |      | Loops                  | |
 | 06  |      | Arrays                 | |
 | 07  |      | Array Operations       | | 
+| 08  |      | Strings                | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
