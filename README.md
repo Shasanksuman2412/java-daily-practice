@@ -51,6 +51,7 @@ Day02-Variables/
 | 09  |      | Methods                | |
 | 10  |      | Classes and Objects    | |
 | 11  |      | Encapsulation          | |
+| 12  |      | Inheritance            | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
