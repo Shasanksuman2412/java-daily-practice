@@ -50,6 +50,7 @@ Day02-Variables/
 | 08  |      | Strings                | |
 | 09  |      | Methods                | |
 | 10  |      | Classes and Objects    | |
+| 11  |      | Encapsulation          | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
