@@ -52,6 +52,7 @@ Day02-Variables/
 | 10  |      | Classes and Objects    | |
 | 11  |      | Encapsulation          | |
 | 12  |      | Inheritance            | |
+| 13  |      | Polymorphism           | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
