@@ -54,6 +54,7 @@ Day02-Variables/
 | 12  |      | Inheritance            | |
 | 13  |      | Polymorphism           | |
 | 14  |      | Abstraction            | |
+| 15  |      | Exception Handling     | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
