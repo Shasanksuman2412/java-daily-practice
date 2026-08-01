@@ -53,6 +53,7 @@ Day02-Variables/
 | 11  |      | Encapsulation          | |
 | 12  |      | Inheritance            | |
 | 13  |      | Polymorphism           | |
+| 14  |      | Abstraction            | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
