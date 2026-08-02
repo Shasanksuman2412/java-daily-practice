@@ -57,6 +57,7 @@ Day02-Variables/
 | 15  |      | Exception Handling     | |
 | 16  |      | Collections Framework  | |
 | 17  |      | Generics               | |
+| 18  |      | File Handling          | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
