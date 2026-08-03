@@ -58,6 +58,7 @@ Day02-Variables/
 | 16  |      | Collections Framework  | |
 | 17  |      | Generics               | |
 | 18  |      | File Handling          | |
+| 19  |      | Lambda Expressions and Streams | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
