@@ -60,6 +60,7 @@ Day02-Variables/
 | 18  |      | File Handling          | |
 | 19  |      | Lambda Expressions and Streams | |
 | 20  |      | Capstone Project - Student Management System | |
+| 21  |      |  Multithreading        | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
