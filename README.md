@@ -63,6 +63,7 @@ Day02-Variables/
 | 21  |      |  Multithreading        | |
 | 22  |      |  Enmus                 | |
 | 23  |      | Data and Time API      | |
+| 24  |      | Regular Expressions    | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
