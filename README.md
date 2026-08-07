@@ -65,6 +65,7 @@ Day02-Variables/
 | 23  |      | Data and Time API      | |
 | 24  |      | Regular Expressions    | |
 | 25  |      | Comparable and Comparator | |
+| 26  |      | Nested and Inner Classes | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
