@@ -64,6 +64,7 @@ Day02-Variables/
 | 22  |      |  Enmus                 | |
 | 23  |      | Data and Time API      | |
 | 24  |      | Regular Expressions    | |
+| 25  |      | Comparable and Comparator | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
