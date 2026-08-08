@@ -67,6 +67,7 @@ Day02-Variables/
 | 25  |      | Comparable and Comparator | |
 | 26  |      | Nested and Inner Classes | |
 | 27  |      | Object Class Methods (equals, hashCode, toString) | |
+| 28  |      | Design Patterns (Singleton and Builder) | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
