@@ -66,6 +66,7 @@ Day02-Variables/
 | 24  |      | Regular Expressions    | |
 | 25  |      | Comparable and Comparator | |
 | 26  |      | Nested and Inner Classes | |
+| 27  |      | Object Class Methods (equals, hashCode, toString) | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
