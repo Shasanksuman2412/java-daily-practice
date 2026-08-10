@@ -71,6 +71,7 @@ Day02-Variables/
 | 29  |      |  Wrapper Classes and Autoboxing | |
 | 30  |      | Capstone Project 2 - Library Management System | |
 | 31  |      |  Scanner and User Input Handling | |
+| 32  |      | Varargs                | | 
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
