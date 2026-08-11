@@ -72,7 +72,8 @@ Day02-Variables/
 | 30  |      | Capstone Project 2 - Library Management System | |
 | 31  |      |  Scanner and User Input Handling | |
 | 32  |      | Varargs                | | 
-| 33  |      | StringBuilder Deep Dive, Day 34: Bitwise Operators | |
+| 33  |      | StringBuilder Deep Dive| |
+| 34  |      | Bitwise Operators      | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
