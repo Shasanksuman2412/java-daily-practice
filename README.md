@@ -74,6 +74,7 @@ Day02-Variables/
 | 32  |      | Varargs                | | 
 | 33  |      | StringBuilder Deep Dive| |
 | 34  |      | Bitwise Operators      | |
+| 35  |      | Records                | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
