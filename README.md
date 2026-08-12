@@ -75,6 +75,7 @@ Day02-Variables/
 | 33  |      | StringBuilder Deep Dive| |
 | 34  |      | Bitwise Operators      | |
 | 35  |      | Records                | |
+| 36  |      | Pattern Matching       | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
