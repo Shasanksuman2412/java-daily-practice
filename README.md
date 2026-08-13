@@ -76,6 +76,7 @@ Day02-Variables/
 | 34  |      | Bitwise Operators      | |
 | 35  |      | Records                | |
 | 36  |      | Pattern Matching       | |
+| 37  |      | Sealed Classes         | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
