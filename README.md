@@ -78,6 +78,7 @@ Day02-Variables/
 | 36  |      | Pattern Matching       | |
 | 37  |      | Sealed Classes         | |
 | 38  |      |  Optional Deep Dive    | |
+| 39  |      | Text Blocks            | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
