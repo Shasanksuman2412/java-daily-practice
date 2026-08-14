@@ -77,6 +77,7 @@ Day02-Variables/
 | 35  |      | Records                | |
 | 36  |      | Pattern Matching       | |
 | 37  |      | Sealed Classes         | |
+| 38  |      |  Optional Deep Dive    | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
