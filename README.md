@@ -80,6 +80,7 @@ Day02-Variables/
 | 38  |      |  Optional Deep Dive    | |
 | 39  |      | Text Blocks            | |
 | 40  |      | Unit Testing with JUnit | |
+| 41  |      | Annotations            | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
