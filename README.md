@@ -81,6 +81,7 @@ Day02-Variables/
 | 39  |      | Text Blocks            | |
 | 40  |      | Unit Testing with JUnit | |
 | 41  |      | Annotations            | |
+| 42  |      |  try-with-resources and Custom AutoCloseable | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
