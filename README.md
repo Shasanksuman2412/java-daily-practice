@@ -82,6 +82,7 @@ Day02-Variables/
 | 40  |      | Unit Testing with JUnit | |
 | 41  |      | Annotations            | |
 | 42  |      |  try-with-resources and Custom AutoCloseable | |
+| 43  |      | Custom Iterator and Iterable | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
