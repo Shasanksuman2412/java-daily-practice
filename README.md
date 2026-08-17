@@ -84,6 +84,7 @@ Day02-Variables/
 | 42  |      |  try-with-resources and Custom AutoCloseable | |
 | 43  |      | Custom Iterator and Iterable | |
 | 44  |      | Generics Wildcards | |
+| 45  |      | JDBC                  | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
