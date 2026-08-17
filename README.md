@@ -85,6 +85,7 @@ Day02-Variables/
 | 43  |      | Custom Iterator and Iterable | |
 | 44  |      | Generics Wildcards | |
 | 45  |      | JDBC                  | |
+| 46  |      | JAR Packaging      | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
