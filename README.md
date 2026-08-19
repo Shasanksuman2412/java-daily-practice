@@ -86,6 +86,7 @@ Day02-Variables/
 | 44  |      | Generics Wildcards | |
 | 45  |      | JDBC                  | |
 | 46  |      | JAR Packaging      | |
+| 47  |      | Networking Basics  | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
