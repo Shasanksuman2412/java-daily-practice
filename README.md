@@ -88,6 +88,7 @@ Day02-Variables/
 | 46  |      | JAR Packaging      | |
 | 47  |      | Networking Basics  | |
 | 48  |      | Capstone Project 3 - Multi-Client Chat Server | |
+| 49  |      | Introduction to Spring Boot | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
