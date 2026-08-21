@@ -91,6 +91,7 @@ Day02-Variables/
 | 49  |      | Introduction to Spring Boot | |
 | 50  |      | REST CRUD API      | |
 | 51  |      | Spring Data JPA | |
+| 52  |      | Bean Validation and Global Exception Handling | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
