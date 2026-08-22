@@ -93,6 +93,7 @@ Day02-Variables/
 | 51  |      | Spring Data JPA | |
 | 52  |      | Bean Validation and Global Exception Handling | |
 | 53  |      |  Entity Relationships | |
+| 54  |      | DTOs | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
