@@ -94,6 +94,7 @@ Day02-Variables/
 | 52  |      | Bean Validation and Global Exception Handling | |
 | 53  |      |  Entity Relationships | |
 | 54  |      | DTOs | |
+| 55  |      | Spring Security Basics | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
