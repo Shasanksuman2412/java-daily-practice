@@ -95,6 +95,7 @@ Day02-Variables/
 | 53  |      |  Entity Relationships | |
 | 54  |      | DTOs | |
 | 55  |      | Spring Security Basics | |
+| 56  |      | Database-Backed Authentication | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
