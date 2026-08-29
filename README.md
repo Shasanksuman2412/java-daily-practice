@@ -97,6 +97,7 @@ Day02-Variables/
 | 55  |      | Spring Security Basics | |
 | 56  |      | Database-Backed Authentication | |
 | 57  |      |  JWT Authentication | |
+| 58  |      | Testing Spring Boot Applications | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
