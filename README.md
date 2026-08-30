@@ -98,6 +98,7 @@ Day02-Variables/
 | 56  |      | Database-Backed Authentication | |
 | 57  |      |  JWT Authentication | |
 | 58  |      | Testing Spring Boot Applications | |
+| 59  |      | Pagination and Sorting | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
