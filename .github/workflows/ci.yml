@@ -1,0 +1,59 @@
+name: Task Manager CI
+
+# Trigger only when files inside THIS project's folder actually change -
+# important since this Spring Boot project lives inside a much larger
+# learning repo with many unrelated Day folders. Without this "paths"
+# filter, every single commit across the whole repo would trigger a
+# Maven build, even for something like editing Day 5's notes.md.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Day62-CICD/TaskManagerJPA/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'Day62-CICD/TaskManagerJPA/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        # every "run:" step below executes AS IF you'd cd'd into this
+        # folder first - avoids repeating the path in every single command
+        working-directory: Day62-CICD/TaskManagerJPA
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven' # caches ~/.m2 between runs, avoids re-downloading everything every time
+
+      - name: Run tests
+        run: mvn test
+
+      - name: Package the application
+        run: mvn package -DskipTests # tests already ran above, no need to run them twice
+
+  build-image:
+    needs: test # only runs if the "test" job above succeeded - broken code never gets packaged
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Day62-CICD/TaskManagerJPA
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t taskmanager-api:${{ github.sha }} .
+        # ${{ github.sha }} tags the image with the exact commit hash that
+        # produced it - makes it easy to trace which code any given image
+        # actually contains, unlike a generic "latest" tag.
