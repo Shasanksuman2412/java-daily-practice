@@ -101,6 +101,7 @@ Day02-Variables/
 | 59  |      | Pagination and Sorting | |
 | 60  |      | API Documentation with Swagger/OpenAPI | |
 | 61  |      | Dockerizing the Spring Boot Application | |
+| 62  |      | CI/CD with GitHub Actions |  |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
