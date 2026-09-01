@@ -1,0 +1,15 @@
+services:
+  taskmanager:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      # maps ./data on your REAL machine to /app/data INSIDE the
+      # container - this is what makes the H2 database survive even
+      # after the container is stopped, removed, and rebuilt.
+      - ./data:/app/data
+    environment:
+      # overrides the default jwt.secret from application.properties -
+      # in a real deployment this would come from a secrets manager,
+      # never committed to source control.
+      - JWT_SECRET=ZmFrZS1zZWNyZXQta2V5LWZvci1sZWFybmluZy1qd3QtZG8tbm90LXVzZS1pbi1wcm9kdWN0aW9u
