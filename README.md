@@ -102,6 +102,7 @@ Day02-Variables/
 | 60  |      | API Documentation with Swagger/OpenAPI | |
 | 61  |      | Dockerizing the Spring Boot Application | |
 | 62  |      | CI/CD with GitHub Actions |  |
+| 63  |      | Cloud Deployment | |
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow

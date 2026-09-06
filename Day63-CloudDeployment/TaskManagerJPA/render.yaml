@@ -1,0 +1,17 @@
+# Infrastructure as code: instead of clicking through Render's UI every
+# time, this file describes the deployment declaratively. Render can
+# detect this automatically when you connect a repo ("Blueprint" deploys),
+# or you can configure the same settings manually in the dashboard -
+# both approaches are shown in notes.md.
+
+services:
+  - type: web
+    name: task-manager-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    rootDir: Day63-CloudDeployment/TaskManagerJPA
+    plan: free
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true # Render generates a secure random value automatically
+    healthCheckPath: /swagger-ui.html
