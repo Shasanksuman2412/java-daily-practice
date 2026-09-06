@@ -1,0 +1,30 @@
+services:
+  # New today: a REAL PostgreSQL database, running as its own container -
+  # this is what our app connects to now instead of an H2 file.
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: taskdb
+      POSTGRES_USER: taskuser
+      POSTGRES_PASSWORD: taskpass
+    volumes:
+      - pgdata:/var/lib/postgresql/data # THIS is what actually persists data now
+    ports:
+      - "5432:5432" # optional - lets you connect a GUI tool (e.g. pgAdmin, TablePlus) from your host machine
+
+  taskmanager:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres # ensures postgres starts BEFORE the app tries to connect to it
+    environment:
+      - DB_HOST=postgres # the SERVICE NAME above doubles as the hostname inside Docker's internal network
+      - DB_PORT=5432
+      - DB_NAME=taskdb
+      - DB_USER=taskuser
+      - DB_PASSWORD=taskpass
+      - JWT_SECRET=ZmFrZS1zZWNyZXQta2V5LWZvci1sZWFybmluZy1qd3QtZG8tbm90LXVzZS1pbi1wcm9kdWN0aW9u
+
+volumes:
+  pgdata: # a NAMED volume, managed by Docker itself - survives container restarts/rebuilds

@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: task-manager-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    rootDir: Day64-PostgreSQL/TaskManagerJPA
+    plan: free
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      # New today: these pull connection details automatically from the
+      # managed database defined below, via "fromDatabase" - no manual
+      # copy-pasting of credentials between the database and the web service.
+      - key: DB_HOST
+        fromDatabase:
+          name: task-manager-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: task-manager-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: task-manager-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: task-manager-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: task-manager-db
+          property: password
+
+databases:
+  # New today: a REAL managed PostgreSQL instance - Render handles
+  # backups, persistence, and connection details automatically. This is
+  # what actually fixes Day 63's "data doesn't survive a redeploy" problem.
+  - name: task-manager-db
+    plan: free

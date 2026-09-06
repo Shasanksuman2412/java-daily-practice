@@ -1,28 +1,25 @@
 name: Task Manager CI
 
-# Trigger only when files inside THIS project's folder actually change -
-# important since this Spring Boot project lives inside a much larger
-# learning repo with many unrelated Day folders. Without this "paths"
-# filter, every single commit across the whole repo would trigger a
-# Maven build, even for something like editing Day 5's notes.md.
+# Updated today: paths now point at Day64-PostgreSQL/TaskManagerJPA
+# instead of Day62's folder. Tests still run against fast, in-memory H2
+# (see src/test/resources/application.properties) - no real Postgres
+# needed just to run "mvn test" in CI.
 on:
   push:
     branches: [main]
     paths:
-      - 'Day62-CICD/TaskManagerJPA/**'
+      - 'Day64-PostgreSQL/TaskManagerJPA/**'
   pull_request:
     branches: [main]
     paths:
-      - 'Day62-CICD/TaskManagerJPA/**'
+      - 'Day64-PostgreSQL/TaskManagerJPA/**'
 
 jobs:
   test:
     runs-on: ubuntu-latest
     defaults:
       run:
-        # every "run:" step below executes AS IF you'd cd'd into this
-        # folder first - avoids repeating the path in every single command
-        working-directory: Day62-CICD/TaskManagerJPA
+        working-directory: Day64-PostgreSQL/TaskManagerJPA
 
     steps:
       - name: Check out the repository
@@ -33,20 +30,20 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'maven' # caches ~/.m2 between runs, avoids re-downloading everything every time
+          cache: 'maven'
 
       - name: Run tests
         run: mvn test
 
       - name: Package the application
-        run: mvn package -DskipTests # tests already ran above, no need to run them twice
+        run: mvn package -DskipTests
 
   build-image:
-    needs: test # only runs if the "test" job above succeeded - broken code never gets packaged
+    needs: test
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Day62-CICD/TaskManagerJPA
+        working-directory: Day64-PostgreSQL/TaskManagerJPA
 
     steps:
       - name: Check out the repository
@@ -54,6 +51,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t taskmanager-api:${{ github.sha }} .
-        # ${{ github.sha }} tags the image with the exact commit hash that
-        # produced it - makes it easy to trace which code any given image
-        # actually contains, unlike a generic "latest" tag.
