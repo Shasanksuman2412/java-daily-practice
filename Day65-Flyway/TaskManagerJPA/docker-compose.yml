@@ -1,0 +1,31 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: taskdb
+      POSTGRES_USER: taskuser
+      POSTGRES_PASSWORD: taskpass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  taskmanager:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=taskdb
+      - DB_USER=taskuser
+      - DB_PASSWORD=taskpass
+      - JWT_SECRET=ZmFrZS1zZWNyZXQta2V5LWZvci1sZWFybmluZy1qd3QtZG8tbm90LXVzZS1pbi1wcm9kdWN0aW9u
+    # Flyway runs its migrations automatically as part of Spring Boot
+    # startup, right here inside the container - no separate migration
+    # step or command needed.
+
+volumes:
+  pgdata:

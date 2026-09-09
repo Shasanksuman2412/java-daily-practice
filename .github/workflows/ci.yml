@@ -1,25 +1,21 @@
 name: Task Manager CI
 
-# Updated today: paths now point at Day64-PostgreSQL/TaskManagerJPA
-# instead of Day62's folder. Tests still run against fast, in-memory H2
-# (see src/test/resources/application.properties) - no real Postgres
-# needed just to run "mvn test" in CI.
 on:
   push:
     branches: [main]
     paths:
-      - 'Day64-PostgreSQL/TaskManagerJPA/**'
+      - 'Day65-Flyway/TaskManagerJPA/**'
   pull_request:
     branches: [main]
     paths:
-      - 'Day64-PostgreSQL/TaskManagerJPA/**'
+      - 'Day65-Flyway/TaskManagerJPA/**'
 
 jobs:
   test:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Day64-PostgreSQL/TaskManagerJPA
+        working-directory: Day65-Flyway/TaskManagerJPA
 
     steps:
       - name: Check out the repository
@@ -43,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Day64-PostgreSQL/TaskManagerJPA
+        working-directory: Day65-Flyway/TaskManagerJPA
 
     steps:
       - name: Check out the repository

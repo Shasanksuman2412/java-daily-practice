@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: task-manager-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    rootDir: Day65-Flyway/TaskManagerJPA
+    plan: free
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DB_HOST
+        fromDatabase:
+          name: task-manager-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: task-manager-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: task-manager-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: task-manager-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: task-manager-db
+          property: password
+
+databases:
+  - name: task-manager-db
+    plan: free
