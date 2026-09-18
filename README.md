@@ -105,6 +105,7 @@ Day02-Variables/
 | 63  |      | Cloud Deployment | |
 | 64  |      |  Migrating to PostgreSQL | |
 | 65  |      | Database Migrations with Flyway | |
+| 66  |      | Spring Boot Actuator | | 
 *(Update this table every time you commit — it becomes a nice changelog of your journey.)*
 
 ## 🔁 Daily Workflow
